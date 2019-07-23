@@ -50,13 +50,21 @@ a:hover{
     color: darkorange;
 }
 
+.card-group * {
+    margin: 0 auto;
+}
+
 .card{
-    width:25%;
+    width: 550px;
     margin: 20px;
 }
 
 .card-body{
     text-align: center;
+}
+
+.card-footer{
+    width: 100%;
 }
 
 form{

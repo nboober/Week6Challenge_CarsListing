@@ -8,12 +8,13 @@
     <a href="/">Back to Home</a>
 
 <div class="card-group">
-    <div class="card">
+    <div style="width: 550px;" class="card">
 
         <img  class="card-img-top" th:src="${car.image}" alt="No Image Available">
         <div class="card-body">
             <h5 class="card-title" th:text="${car.manufacturer}"></h5>
             <p class="card-text" th:text="${car.model}"></p>
+            <p class="card-text" th:text="${car.category.name}"></p>
             <p class="card-text" th:text="${car.year}"></p>
             <p class="card-text" th:field="text">$[[${car.msrp}]]</p>
 
