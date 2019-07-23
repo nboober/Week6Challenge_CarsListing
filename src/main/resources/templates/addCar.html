@@ -9,16 +9,16 @@
         <input type="hidden" th:field="*{id}"/>
 
         Manufacturer: <input type="text" th:field="*{manufacturer}" />
-        <span th:if="${#fields.hasErrors('manufacturer')}" th:error="*{manufacturer}"/><br/>
+        <span th:if="${#fields.hasErrors('manufacturer')}" th:errors="*{manufacturer}"/><br/>
 
         Model: <input type="text" th:field="*{model}" />
-        <span th:if="${#fields.hasErrors('model')}" th:error="*{model}"/><br/>
+        <span th:if="${#fields.hasErrors('model')}" th:errors="*{model}"/><br/>
 
         Year: <input type="text" th:field="*{year}" />
-        <span th:if="${#fields.hasErrors('year')}" th:error="*{year}"/><br/>
+        <span th:if="${#fields.hasErrors('year')}" th:errors="*{year}"/><br/>
 
         MSRP <input type="text" th:field="*{msrp}" />
-        <span th:if="${#fields.hasErrors('msrp')}" th:error="*{msrp}"/><br/>
+        <span th:if="${#fields.hasErrors('msrp')}" th:errors="*{msrp}"/><br/>
 
         Category: <select th:field="*{category}" multiple>
 

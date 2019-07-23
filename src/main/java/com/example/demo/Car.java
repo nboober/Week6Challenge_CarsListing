@@ -21,9 +21,11 @@ public class Car {
     private String model;
 
     @NotNull
+    @Min(1000)
     private int year;
 
     @NotNull
+    @Min(500)
     private int msrp;
 
     public String image;
