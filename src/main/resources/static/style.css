@@ -1,0 +1,68 @@
+.fancy-writing{
+    font-family: 'Geostar Fill', cursive;
+}
+
+body{
+    background-color: darkorange;
+}
+
+a{
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.category-container{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.category-container a{
+    width: 60px;
+}
+
+.category-item{
+    border-radius: 75px 75px 75px 75px;
+    -moz-border-radius: 75px 75px 75px 75px;
+    -webkit-border-radius: 75px 75px 75px 75px;
+    border: 1px solid black;
+
+    margin-left: 10px;
+
+    padding: 5px;
+
+    text-align: center;
+
+    color: white;
+
+    background-color: black;
+}
+
+.category-item:hover{
+    color: darkorange;
+}
+
+.card{
+    width:25%;
+    margin: 20px;
+}
+
+.card-body{
+    text-align: center;
+}
+
+form{
+    margin: 15px;
+}
+
+.error-font{
+    color: white;
+}
