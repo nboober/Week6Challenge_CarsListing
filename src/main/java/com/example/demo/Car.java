@@ -28,6 +28,8 @@ public class Car {
     @Size(min=3)
     private int msrp;
 
+    public String image;
+
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "category.id")
     private Category category;
@@ -38,6 +40,14 @@ public class Car {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public String getManufacturer() {
