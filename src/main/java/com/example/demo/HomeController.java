@@ -61,27 +61,27 @@ public class HomeController {
 
     @RequestMapping("/updateCategory/{id}")
     public String updateCategory(@PathVariable("id") long id, Model model){
-        model.addAttribute("category", categoryRepository.findById(id));
+        model.addAttribute("category", categoryRepository.findById(id).get());
         return "addCategory";
     }
 
     @RequestMapping("/updateCar/{id}")
     public String updateCar(@PathVariable("id") long id, Model model){
-        model.addAttribute("car", carRepository.findById(id));
+        model.addAttribute("car", carRepository.findById(id).get());
         model.addAttribute("categories", categoryRepository.findAll());
         return "addCar";
     }
 
     @RequestMapping("/viewCategory/{id}")
     public String viewCategory(@PathVariable("id") long id, Model model){
-        model.addAttribute("category", categoryRepository.findById(id));
+        model.addAttribute("category", categoryRepository.findById(id).get());
         model.addAttribute("cars", carRepository.findAll());
         return "viewCategory";
     }
 
     @RequestMapping("/viewCar/{id}")
     public String viewCar(@PathVariable("id") long id, Model model){
-        model.addAttribute("car", carRepository.findById(id));
+        model.addAttribute("car", carRepository.findById(id).get());
         return "viewCar";
     }
 

@@ -21,17 +21,15 @@ public class Car {
     private String model;
 
     @NotNull
-    @Size(min=4)
     private int year;
 
     @NotNull
-    @Size(min=3)
     private int msrp;
 
     public String image;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "category.id")
+    @JoinColumn(name = "category_id")
     private Category category;
 
     public long getId() {

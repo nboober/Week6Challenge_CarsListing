@@ -18,8 +18,8 @@ public class Category {
     private String name;
 
 
-    @OneToMany(mappedBy = "category", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    public Set<Car> cars;
+    @OneToMany(mappedBy = "category", fetch = FetchType.EAGER, cascade = CascadeType.REMOVE)
+    public Set<Car> car;
 
 
     public long getId() {
@@ -38,11 +38,11 @@ public class Category {
         this.name = name;
     }
 
-    public Set<Car> getCars() {
-        return cars;
+    public Set<Car> getCar() {
+        return car;
     }
 
-    public void setCars(Set<Car> cars) {
-        this.cars = cars;
+    public void setCars(Set<Car> car) {
+        this.car = car;
     }
 }
