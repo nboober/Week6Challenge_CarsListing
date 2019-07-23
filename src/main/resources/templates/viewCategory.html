@@ -3,6 +3,8 @@
 <head th:insert="base :: head"></head>
 <body>
 
+<nav th:insert="base :: navbar"></nav>
+
     <a href="/homePage">Back to Home</a>
 
     <div th:text="${#lists.size(category.cars)>0}? 'Cars' : There are no cars listed in this Category..."></div>

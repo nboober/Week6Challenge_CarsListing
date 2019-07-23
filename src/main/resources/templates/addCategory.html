@@ -3,6 +3,8 @@
 <head th:insert="base :: head"></head>
 <body>
 
+<nav th:insert="base :: navbar"></nav>
+
 <form action="#" th:action="@{/processCategory}" th:object="${category}" method="post">
     <input type="hidden" th:field="*{id}"/>
 

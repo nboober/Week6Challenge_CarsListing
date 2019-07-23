@@ -3,6 +3,8 @@
 <head th:insert="base :: head"></head>
 <body>
 
+<nav th:insert="base :: navbar"></nav>
+
 <div th:text="${#lists.size(categories)>0}? 'Categories' : No Categories yet..."></div>
 <div th:each="category : ${categories}">
     <h3 th:text="${category.name}"></h3>
